@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container{
+    display: flex;
+    }
+    
+    .leftSide{
+        width: 40%;
+        background-color: rgba(156, 97, 8, 0.616);
+        min-height: 100vh;
+    }
+    
+    .rightSide{
+        width: 60%;
+        min-height: 100vh;
+        padding: 15px;
+    }
+    
+    .leftSide .foto img{
+        width: 30%;
+        height: auto;
+        aspect-ratio: auto;
+    }
+    
+    .leftSide .foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .name{
+        font-size: 28px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 30px 10px 0;
+        padding: 0 65px 0 0;
+    }
+    
+    .contact .phone,
+     .contact .email,
+      .contact .address{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact .phone .fotoIcon img,
+     .contact .email .emailIcon img,
+      .contact .address .addressIcon img{
+        width: 25px;
+        height: auto;
+        aspect-ratio: auto;
+    }
+    
+    .contact .phoneNumber,
+    .contact .emailAddress,
+    .contact .addressNumber{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .contact .phone .fotoIcon,
+     .contact .email .emailIcon,
+      .contact .address .addressIcon{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .info .languages, .info .hobbies {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info hr {
+        width: 80%;
+    }
+
+    .info h2 {
+        text-transform: uppercase;
+        
+    }
+
+    .rightSide h2 {
+
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+        width: 90%;
+
+    }
+
+    .rightSide p, .rightSide ul{
+        width: 90%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    @media screen and (max-width: 700px) {
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .leftSide, .rightSide {
+            width: 100%;
+        }
+            
+        
+    }
